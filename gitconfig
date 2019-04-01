@@ -27,3 +27,40 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+
+#This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+  name = Glenn Harmon 
+  email = gharmon@covermymeds.com
+[alias]
+  co = checkout
+  st = status
+  gdif = diff
+	whoami = ! git config user.name && git config.user.email
+	browse = "! f() { URL=$(git config remote.${1-origin}.url | sed -e 's#^.*@#https://#' -e 's#.git$##' -e 's#:#/#2'); git web--browse $URL; }; f"
+	alias = ! git config --get-regexp ^alias\\. | sort | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+[apply]
+  whitespace = nowarn
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = cyan
+    local = yellow
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = cyan
+    changed = yellow
+    untracked = red
+[core]
+	excludesfile = /Users/gharmon/.gitignore_global
+[push]
+	default = simple
+
