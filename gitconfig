@@ -28,11 +28,11 @@
 [diff]
   colorMoved = zebra
 
-#This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-  name = Glenn Harmon 
-  email = gharmon@covermymeds.com
+# #This is Git's per-user configuration file.
+# [user]
+# # Please adapt and uncomment the following lines:
+#   name = Glenn Harmon 
+#   email = gharmon@covermymeds.com
 [alias]
   co = checkout
   st = status
