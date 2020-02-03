@@ -64,3 +64,6 @@
 [push]
 	default = simple
 
+[user]
+	email = glenn.d.harmon@icloud.com
+	name = Glenn Harmon
